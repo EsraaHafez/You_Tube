@@ -1,0 +1,115 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+body{
+    background-color:black;
+    height: 100%;
+ 
+ 
+   
+}
+.yt-menu{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.yt-menu:hover{
+    background: rgba(128, 128, 128, 0.4) !important;
+}
+
+.yt-searchbox{
+    width: 60%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* border: 1px solid #8a8a8a36; */
+    padding: 5px 10px;
+   
+}
+.yt-searchbox input{
+    width: 85%;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    padding: 5px 10px;
+    outline: 1px solid rgba(177, 177, 177, 0.252);
+}
+
+.yt-searchbox input:focus{
+    outline: 1px solid rgba(0, 128, 255, 0.61);
+}
+
+.yt-searchbox span{
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    width: 60px;
+    background-color: rgba(87, 87, 87, 0.489);
+    border: 1px solid rgba(87, 87, 87, 0.489);
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.yt-searchbox span:hover{
+    background-color: rgb(127, 127, 127);
+}
+
+
+.yt-searchbox:hover >.yt-search-dropdown{
+    display: block !important;
+}
+
+
+.yt-action .bi{
+    margin: 0px 15px;
+    cursor: pointer;
+    color: #ffffffcb;
+}
+
+.yt-action  .bi:hover{
+    color: red !important;
+}
+
+.yt-search-dropdown{
+    z-index: 100;
+    background: #fff;
+    height: max-content;
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px 0px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    display: none;
+}
+
+
+.yt-search-item{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+ /* _____________________________________________________________________________________________ */
+ .c{
+    margin-top: -450px; 
+    margin-left: 12px;
+    
+ }
+  
+ @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
