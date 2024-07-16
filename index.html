@@ -3,906 +3,1076 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta
-        name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap CSS -->
 
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Youtube.com</title>
         <link rel="stylesheet" href="style.css">
     </head>
-        <div
-            class="container-fluid">
-            <!-- navbar -->
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-sm navbar-light  navbar-expand-lg">
-                        <div class="container-fluid p-0">
-                            <div class="d-none d-lg-block">
-                                <button style="background: transparent;" class="yt-menu border-0 rounded-circle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#fff" class="bi bi-list" viewbox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    <div
+        class="container-fluid">
+        <!-- navbar -->
+        <div class="row">
+            <div class="col-sm-md-lg-12">
+                <nav class="navbar navbar-expand-sm navbar-light  navbar-expand-lg">
+                    <div class="container-fluid p-0">
+                        <div class="d-none d-lg-block ms-md-lg-3">
+                            <button style="background: transparent;" class="yt-menu border-0 rounded-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#fff" class="bi bi-list" viewbox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <div class="yt-searchbox mx-auto position-relative">
+                                <input placeholder="Search..." class="border-0 bg-transparent text-white" type="text"/>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" class="bi bi-search" viewbox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>
-                                </button>
+                                </span>
+                                <div class="yt-search-dropdown">
+                                    <section class="d-flex align-items-center justify-content-between yt-search-item">
+                                        <p class="m-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewbox="0 0 16 16">
+                                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                            </svg>
+
+                                            <b>
+                                                B Coder Netflix</b>
+                                        </p>
+                                        <a href="#">remove</a>
+                                    </section>
+                                </div>
                             </div>
-                            <a class="navbar-brand" href="#">
-                                <img src="images/logo.png" alt="">
+
+                        </div>
+
+                        <div class="yt-action d-flex align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera-video d-lg-block d-none" viewbox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bell d-lg-block d-none" viewbox="0 0 16 16">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle d-block" viewbox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container my-4">
+
+                    <div class="row">
+
+                        <div
+                            class="col-sm-lg-md-4 mb-3">
+
+
+                            <!-- card -->
+                             <div class="card" style="display: inline-flexbox; width: 18rem ;  margin-left: 955px; margin-top: 55px;"> 
+                             <!-- <div class="card" style="display: inline-flexbox; width: 18rem ;  margin-left: 955px; top: 55px;"> -->
+                              <!-- <img class="card-img-top" src="images/t6.png" alt="Card image cap"> -->
+                              <video src="https://codingyaar.com/wp-content/uploads/video-in-bootstrap-card.mp4" class="card-img-top" muted autoplay loop></video>
+                              <div class="card-body">
+                                  <p class="card-text">
+                                      !! فيديو مهم جدا لكل الي بيتعلم برمجة
+                                      <br>
+                                      CodingVi<br>
+                                      24K views  . 2 weeks ago
+                                      <br>
+                                  </p>
+                              </div>
+                          </div>     
+
+                            <!-- card -->
+                             <div class="card" style="display: inline-flexbox; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
+                              <!-- <img class="card-img-top" src="images/t3.png" alt="Card image cap"> -->
+                              <video class="img-fluid" playsinline autoplay muted loop>
+                                <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4">
+                                </video>
+                              <div class="card-body">
+                                  <p class="card-text">
+                                      !! فيديو مهم جدا لكل الي بيتعلم برمجة
+                                      <br>
+                                      CodingVi<br>
+                                      24K views  . 2 weeks ago
+                                      <br>
+                                  </p>
+                              </div>
+                          </div>       
+
+                            <!-- card -->
+                            <div class="card" style="display: inline-flex; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
+                              <img class="card-img-top" src="images/t4.png" alt="Card image cap">
+                              <div class="card-body">
+                                  <p class="card-text">
+                                      !! فيديو مهم جدا لكل الي بيتعلم برمجة
+                                      <br>
+                                      CodingVi<br>
+                                      24K views  . 2 weeks ago
+                                      <br>
+                                  </p>
+                              </div>
+                          </div>                                  
+
+                            <!-- card -->
+                              <div class="card" style="display: inline-flexbox; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
+                              <!-- <img class="card-img-top" src="images/t1.jpeg" alt="Card image cap"> -->
+                              <video src="https://codingyaar.com/wp-content/uploads/video-in-bootstrap-card.mp4" class="card-img-top" muted autoplay loop></video>
+                              <div class="card-body">
+                                  <p class="card-text">
+                                      !! فيديو مهم جدا لكل الي بيتعلم برمجة
+                                      <br>
+                                      CodingVi<br>
+                                      24K views  . 2 weeks ago
+                                      <br>
+                                  </p>
+                              </div>
+                          </div>                                  
+
+                            <!-- card -->
+                         <div class="card" style="display: inline-flex; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
+                              <img class="card-img-top" src="images/t4.png" alt="Card image cap">
+                              <div class="card-body">
+                                  <p class="card-text">
+                                      !! فيديو مهم جدا لكل الي بيتعلم برمجة
+                                      <br>
+                                      CodingVi<br>
+                                      24K views  . 2 weeks ago
+                                      <br>
+                                  </p>
+                              </div>
+                          </div>    
+
+                            <!-- card -->
+                             <div class="card" style="display: inline-flex; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
+                              <img class="card-img-top" src="images/t4.png" alt="Card image cap">
+                              <div class="card-body">
+                                  <p class="card-text">
+                                      !! فيديو مهم جدا لكل الي بيتعلم برمجة
+                                      <br>
+                                      CodingVi<br>
+                                      24K views  . 2 weeks ago
+                                      <br>
+                                  </p>
+                              </div>
+                          </div>                            
+
+                            <!-- card -->
+           <!--                  <div class="card" style="display: inline-flex; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
+                                <img class="card-img-top" src="images/t4.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        !! فيديو مهم جدا لكل الي بيتعلم برمجة
+                                        <br>
+                                        CodingVi<br>
+                                        24K views  . 2 weeks ago
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+ -->
+                            <!-- end card -->
+
+
+                            <!--iframe-->
+                         <!--    <div style="display:inline-block;   margin-top: -250px;" class="embed-responsive embed-responsive-4by3">
+                                <iframe class="h-50 embed-responsive-item" src="https://www.youtube.com/embed/zbBALFXGy4Y" style="height: 99px; width: 900px; border-radius: 44px;" allowfullscreen></iframe>
+                            </div> -->
+                            <!-- margin-top: -850px; -->
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container my-4">
+
+                    <div class="row">
+
+                        <div class="c col-sm-lg-md-4 mb-3">
+
+
+                            <div style="display:inline-block;   top: -1299px;" class="embed-responsive embed-responsive-4by3">
+                                <iframe class="h-50 embed-responsive-item" src="https://www.youtube.com/embed/zbBALFXGy4Y" style="height: 99px; width: 890px; border-radius: 55px;" allowfullscreen></iframe>
+                            </div>
+
+
+                            <section style="margin-top: -1599px;" class="d-flex">
+                                <div style="width: 50px;">
+                                    <img style="margin-bottom: 88px;" width="40" src="images/logo2.jpg"/>
+                                </div>
+                                <div class="mx-2">
+                                    <p class="text-white fs-5 m-0">Bulb ON/OFF effect || HTML CSS Javascript</p>
+                                    <p class="text-white-50 m-0" style="color: white;">Syntax</p>
+                                    <p class="text-white-50" style="display: inline-block ; color: white;">
+                                        104K subscribers . 1.4M views . 1 day ago
+                                    </p>
+                                    <button type="button" class="btn btn-gray" style="border-radius:33px;  display: inline-block;">Join</button>
+                                    <button type="button" style="border-radius:90px; background-color: black;" class="btn btn-dark">Subscribe</button>
+
+
+                                    <!--  svg -->
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button style="margin-left: 70px;" type="button" class="btn btn-gray">
+                                            <i class="fa fa-thumbs-o-up"></i>
+                                            1.6K</button>
+                                        <button type="button" class="btn btn-gray">
+                                            <i class="fa fa-thumbs-o-down"></i>
+                                        </button>
+                                    </div>
+                                    <button style="margin-left: 20px; border-radius: 70px;" type="button" class="btn btn-gray">
+                                        <i class="fa fa-mail-forward">
+                                            Share</i>
+                                    </button>
+
+                                    <button style="margin-left: 30px; border-radius: 130px; width: 50px; height: 30px;" type="button" class="btn btn-gray">
+                                        <i class="fa fa-ellipsis-h"></i>
+                                    </button>
+                                </div>
+                            </section>
+
+
+                            <!-- discription -->
+
+                            <div class="list-group" style="background-color:  grey;  padding: 22px; width: 890px; height: 200px; border-radius: 39px;">
+                                <p>
+                                    <span style="color: rgb(15, 15, 15); font-size: 23px; border-width: bolder;">13,537 views Jul 1, 2024 List | Professional Programmer's Guide</span><br>
+                                    The C++ programming language is considered one of the oldest and most popular programming languages ​​used in the world. It is widely used in developing games, software, large applications, and operating systems. C++ is a general-purpose programming language that supports object-oriented programming (OOP), 
+                                                             making it an excellent choice for beginners to learn the basics and build a strong foundation in programming.
+                                    <br>
+                                    Show More......
+                                </p>
+                            </div>
+
+                            <!-- comments -->
+
+                            <h1 style=" display: inline-block; margin-top: 22px; margin-left: 22px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:27px ;">220 Comments</h1>
+                            <a style="display: inline-block; margin-left: 20px;">
+                                <i class="fa fa-sort-amount-asc" style="font-size:36px"></i>
+                                Sort By
                             </a>
 
-                            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                                <div class="yt-searchbox mx-auto position-relative">
-                                    <input placeholder="Search..." class="border-0 bg-transparent text-white" type="text"/>
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" class="bi bi-search" viewbox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                        </svg>
-                                    </span>
-                                    <div class="yt-search-dropdown">
-                                        <section class="d-flex align-items-center justify-content-between yt-search-item">
-                                            <p class="m-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewbox="0 0 16 16">
-                                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-                                                </svg>
+                            <!-- add comments -->
 
-                                                <b>
-                                                    B Coder Netflix</b>
-                                            </p>
-                                            <a href="#">remove</a>
-                                        </section>
-                                    </div>
-                                </div>
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">add comments.....</p>
+                                <!-- <hr style="color:burlywood; border:bolder; width: 500px; margin-left: 79px; margin-top: 2px;"> -->
 
                             </div>
 
-                            <div class="yt-action d-flex align-items-center">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera-video d-lg-block d-none" viewbox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bell d-lg-block d-none" viewbox="0 0 16 16">
-                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle d-block" viewbox="0 0 16 16">
-                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                    </svg>
-                                </span>
+
+                            <!-- comments -->
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+                            <!-- ***************************************-->
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="spinner-grow text-light">
+
+                                <i class="fa fa-female" style="font-size:36px; margin-top: 22px;"></i>
+                                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
+                                    @Ferry192      7 days ago
+                                    <br>
+                                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
+                                    <br>
+                                    <i class="fa fa-thumbs-o-up">
+                                        12</i>
+                                    <i style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i>
+                                    <button style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
+                                    <br>
+
+                                    <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
+
+                                    <i class="fa fa-user-circle" style="margin-top: 22px;">
+                                        .4 Replies</i>
+
+                                </p>
+
                             </div>
                         </div>
-                    </nav>
-<div>
-
-    <!-- card -->
-    <div class="card" style="display: inline-flex; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
-        <img class="card-img-top" src="images/t5.png" alt="Card image cap">
-        <div class="card-body">
-            <p class="card-text">
-              !! فيديو مهم جدا لكل الي بيتعلم برمجة <br>
-              CodingVi<br>
-              24K views  . 2 weeks ago <br>
-            </p>
+                    </div>
+                </div>
+                <!-- ....................... -->
+            </div>
         </div>
     </div>
-
-    <!-- card -->
-    <div class="card" style="display: inline-flex; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
-      <img class="card-img-top" src="images/t5.png" alt="Card image cap">
-      <div class="card-body">
-          <p class="card-text">
-            !! فيديو مهم جدا لكل الي بيتعلم برمجة <br>
-            CodingVi<br>
-            24K views  . 2 weeks ago <br>
-          </p>
-      </div>
-  </div>
-
-
-    <!-- card -->
-    <div class="card" style="display: inline-flex; width: 18rem ;  margin-left: 955px; margin-top: 55px;">
-      <img class="card-img-top" src="images/t5.png" alt="Card image cap">
-      <div class="card-body">
-          <p class="card-text">
-            !! فيديو مهم جدا لكل الي بيتعلم برمجة <br>
-            CodingVi<br>
-            24K views  . 2 weeks ago <br>
-          </p>
-      </div>
-  </div>
-    <!-- end card -->
-    <!--iframe-->
-    <div style="display: inline-block; margin-top: -850px;" class="embed-responsive embed-responsive-4by3">
-        <iframe class="h-50 embed-responsive-item" src="https://www.youtube.com/embed/zbBALFXGy4Y" style="height: 99px; width: 900px; border-radius: 44px;" allowfullscreen></iframe>
-    </div>
-</div>
-
-                        <div class="c">
-                                <section class="d-flex">
-                                    <div style="width: 50px;">
-                                        <img  style="margin-bottom: 88px;" width="40" src="images/logo2.jpg"/>
-                                    </div>
-                                    <div class="mx-2">
-                                        <p class="text-white fs-5 m-0">Bulb ON/OFF effect || HTML CSS Javascript</p>
-                                        <p class="text-white-50 m-0" style="color: white;">Syntax</p>
-                                        <p class="text-white-50" style="display: inline-block ; color: white;"> 104K subscribers . 1.4M views . 1 day ago </p>
-                                        <button type="button" class="btn btn-gray" style="border-radius:33px;  display: inline-block;">Join</button>
-                                        <button type="button" style="border-radius:90px; background-color: black;"   class="btn btn-dark">Subscribe</button>
-
-
-
-                                        <!--  svg -->
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button style="margin-left: 70px;" type="button" class="btn btn-gray"> <i class="fa fa-thumbs-o-up"></i> 1.6K</button>
-                                            <button   type="button" class="btn btn-gray"> <i class="fa fa-thumbs-o-down"></i></button>
-                                           </div>
-                                          <button style="margin-left: 20px; border-radius: 70px;" type="button" class="btn btn-gray"><i class="fa fa-mail-forward"> Share</i></button>
- 
-                                            <button style="margin-left: 30px; border-radius: 130px; width: 50px; height: 30px;" type="button" class="btn btn-gray">
-                                            <i class="fa fa-ellipsis-h"></i>
-                                           </button>
-                                    </div>
-                                </section>
-                        </div>
-
-                     <!-- discription -->
-
-                     <div class="list-group" style="background-color:  grey;  padding: 22px; width: 890px; height: 200px; border-radius: 39px;">
-                         <p>
-                            <span style="color: rgb(15, 15, 15); font-size: 23px; border-width: bolder;">13,537 views Jul 1, 2024 List | Professional Programmer's Guide</span><br>
-                            The C++ programming language is considered one of the oldest and most popular programming languages ​​used in the world. It is widely used in developing games, software, large applications, and operating systems. C++ is a general-purpose programming language that supports object-oriented programming (OOP), 
-                            making it an excellent choice for beginners to learn the basics and build a strong foundation in programming.
-                            <br>
-                            Show More......
-                        </p>
-                       </div>
-
-
-                <!-- comments -->
-
-                   <h1 style=" display: inline-block; margin-top: 22px; margin-left: 22px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:27px ;">220 Comments</h1> 
-                  <a style="display: inline-block; margin-left: 20px;">
-                    <i class="fa fa-sort-amount-asc" style="font-size:36px"></i>
-                    Sort By
-                  </a>
-
-              <!-- add comments -->
-
-              <div class="spinner-grow text-light">
-               
-                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">add comments.....</p>
-                <hr style="border:bolder; width: 500px; margin-left: 79px; margin-top: 2px;">
-
-              </div>
-
-
-
-              <!-- comments -->
-
-              <div class="spinner-grow text-light">
-               
-                <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-                <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-                    @Ferry192      7 days ago <br>
-                    بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-                    <br>
-                              <i class="fa fa-thumbs-o-up">  12</i>
-                              <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                              <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-                        <br>
-
-                        <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-                        <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-                </p>
-                 
-              </div>
-   <!-- ***************************************             -->
-
-
-   <div class="spinner-grow text-light">
-               
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-  <div class="spinner-grow text-light">
-   
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-male" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-
-
-  
-  <div class="spinner-grow text-light">
-               
-    <i class="fa fa-female" style="font-size:36px; margin-top: 22px;"></i>
-    <p style="border:bolder; margin-left: 79px; margin-top: -23px;">
-        @Ferry192      7 days ago <br>
-        بدون تحيز لاحد استاذ محمد ابو هدهود فى مسار التأسيس لا يعلى عليه احد حتى الان
-        <br>
-                  <i class="fa fa-thumbs-o-up">  12</i>
-                  <i  style="margin-left: 19px;" class="fa fa-thumbs-o-down"></i> 
-                  <button  style="margin-left: 22px; margin-top: 2px;" type="button" class="btn btn-dark">Reply</button>
-            <br>
-
-            <i class="fa fa-angle-down " style="margin-top: 22px;"></i>
-
-            <i class="fa fa-user-circle" style="margin-top: 22px;"> .4 Replies</i>
-
-    </p>
-     
-  </div>
-<!-- ........................ -->
-        </div>
-        </div>
-    </div>
-
-    </body>
+</body>
 </html>
